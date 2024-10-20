@@ -20,6 +20,7 @@
 		928184D02CC50DC700E31C96 /* magic-wand.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 928184C82CC50DC700E31C96 /* magic-wand.mp3 */; };
 		928184D12CC50DC700E31C96 /* page-flip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 928184C92CC50DC700E31C96 /* page-flip.mp3 */; };
 		928184D22CC50DC700E31C96 /* spellcraft.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 928184CA2CC50DC700E31C96 /* spellcraft.mp3 */; };
+		928184D42CC5140E00E31C96 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928184D32CC5140E00E31C96 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		928184C82CC50DC700E31C96 /* magic-wand.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "magic-wand.mp3"; path = "../../../Downloads/HPResources/Audio/magic-wand.mp3"; sourceTree = "<group>"; };
 		928184C92CC50DC700E31C96 /* page-flip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "page-flip.mp3"; path = "../../../Downloads/HPResources/Audio/page-flip.mp3"; sourceTree = "<group>"; };
 		928184CA2CC50DC700E31C96 /* spellcraft.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = spellcraft.mp3; path = ../../../Downloads/HPResources/Audio/spellcraft.mp3; sourceTree = "<group>"; };
+		928184D32CC5140E00E31C96 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				928184C12CC50D8400E31C96 /* trivia.json */,
 				928184B32CC50CF300E31C96 /* HpTriviaApp.swift */,
 				928184B52CC50CF300E31C96 /* ContentView.swift */,
+				928184D32CC5140E00E31C96 /* Constants.swift */,
 				928184B72CC50CF400E31C96 /* Assets.xcassets */,
 				928184C72CC50DC700E31C96 /* deep-in-the-dell.mp3 */,
 				928184C42CC50DC700E31C96 /* hiding-place-in-the-forest.mp3 */,
@@ -175,6 +178,7 @@
 			files = (
 				928184B62CC50CF300E31C96 /* ContentView.swift in Sources */,
 				928184B42CC50CF300E31C96 /* HpTriviaApp.swift in Sources */,
+				928184D42CC5140E00E31C96 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

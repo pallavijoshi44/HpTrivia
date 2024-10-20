@@ -8,14 +8,115 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var scalePlayButton = true
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        GeometryReader { geo in
+            ZStack {
+                Image("hogwarts")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: geo.size.width * 3, height: geo.size.height)
+                    .padding(.top, 3)
+                
+                VStack {
+                    
+                    VStack {
+                        Image(systemName: "bolt.fill")
+                            .font(.largeTitle)
+                            .imageScale(.large)
+                        
+                        Text("HP")
+                            .font(.custom(Constants.HPfont, size: 70))
+                        
+                        Text("Trivia")
+                            .font(.custom(Constants.HPfont, size: 60))
+                        
+                    }
+                    .padding(.top, 70)
+                    
+                    Spacer()
+                    
+                    VStack {
+                        Text("Recent Scores")
+                            .font(.title2)
+                        Text("200")
+                        Text("130")
+                        Text("140")
+                    }
+                    .font(.title3)
+                    .foregroundColor(.white)
+                    .padding(.horizontal)
+                    .background(.black.opacity(0.7))
+                    .cornerRadius(15)
+                
+                    Spacer()
+                    
+                    HStack {
+                        Spacer()
+                        Image(systemName: "info.circle.fill")
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                            .shadow(radius: 5)
+                        
+                        Spacer()
+                        
+                        Button(
+                            action: {
+                                
+                            },
+                            label: {
+                                Text("Play")
+                                    .font(.largeTitle)
+                                    .foregroundColor(.white)
+                                    .padding(.vertical, 7)
+                                    .padding(.horizontal, 50)
+                                    .background(.brown)
+                                    .cornerRadius(7)
+                                    .shadow(radius: 5)
+                                    .scaleEffect(scalePlayButton ? 1.2 : 1)
+                                    .onAppear {
+                                        withAnimation(
+                                            .easeInOut(duration: 1.3)
+                                            .repeatForever()) {
+                                                
+                                                scalePlayButton.toggle()
+                                            }
+                                    }
+                                    
+                            }
+                            
+                        )
+                        
+                        
+                        Spacer()
+                        
+                        Button(
+                            action: {
+                                
+                            },
+                            label: {
+                                Image(systemName: "gearshape.fill")
+                                    .font(.largeTitle)
+                                    .foregroundColor(.white)
+                                    .shadow(radius: 5)
+                            })
+                        Spacer()
+                        
+                    }
+                    .frame(width: geo.size.width)
+                    
+                    Spacer()
+                    
+                }
+                
+                
+            }
+            .frame(width: geo.size.width, height: geo.size.height)
+            .padding(.top, 3)
+            
         }
-        .padding()
+        .ignoresSafeArea()
     }
 }
 
