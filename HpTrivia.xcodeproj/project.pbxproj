@@ -11,6 +11,15 @@
 		928184B62CC50CF300E31C96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928184B52CC50CF300E31C96 /* ContentView.swift */; };
 		928184B82CC50CF400E31C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928184B72CC50CF400E31C96 /* Assets.xcassets */; };
 		928184BB2CC50CF400E31C96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928184BA2CC50CF400E31C96 /* Preview Assets.xcassets */; };
+		928184C22CC50D8400E31C96 /* trivia.json in Resources */ = {isa = PBXBuildFile; fileRef = 928184C12CC50D8400E31C96 /* trivia.json */; };
+		928184CB2CC50DC700E31C96 /* magic-in-the-air.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 928184C32CC50DC700E31C96 /* magic-in-the-air.mp3 */; };
+		928184CC2CC50DC700E31C96 /* hiding-place-in-the-forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 928184C42CC50DC700E31C96 /* hiding-place-in-the-forest.mp3 */; };
+		928184CD2CC50DC700E31C96 /* negative-beeps.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 928184C52CC50DC700E31C96 /* negative-beeps.mp3 */; };
+		928184CE2CC50DC700E31C96 /* let-the-mystery-unfold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 928184C62CC50DC700E31C96 /* let-the-mystery-unfold.mp3 */; };
+		928184CF2CC50DC700E31C96 /* deep-in-the-dell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 928184C72CC50DC700E31C96 /* deep-in-the-dell.mp3 */; };
+		928184D02CC50DC700E31C96 /* magic-wand.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 928184C82CC50DC700E31C96 /* magic-wand.mp3 */; };
+		928184D12CC50DC700E31C96 /* page-flip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 928184C92CC50DC700E31C96 /* page-flip.mp3 */; };
+		928184D22CC50DC700E31C96 /* spellcraft.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 928184CA2CC50DC700E31C96 /* spellcraft.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		928184B52CC50CF300E31C96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		928184B72CC50CF400E31C96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		928184BA2CC50CF400E31C96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		928184C12CC50D8400E31C96 /* trivia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = trivia.json; path = ../../../Downloads/HPResources/trivia.json; sourceTree = "<group>"; };
+		928184C32CC50DC700E31C96 /* magic-in-the-air.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "magic-in-the-air.mp3"; path = "../../../Downloads/HPResources/Audio/magic-in-the-air.mp3"; sourceTree = "<group>"; };
+		928184C42CC50DC700E31C96 /* hiding-place-in-the-forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "hiding-place-in-the-forest.mp3"; path = "../../../Downloads/HPResources/Audio/hiding-place-in-the-forest.mp3"; sourceTree = "<group>"; };
+		928184C52CC50DC700E31C96 /* negative-beeps.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "negative-beeps.mp3"; path = "../../../Downloads/HPResources/Audio/negative-beeps.mp3"; sourceTree = "<group>"; };
+		928184C62CC50DC700E31C96 /* let-the-mystery-unfold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "let-the-mystery-unfold.mp3"; path = "../../../Downloads/HPResources/Audio/let-the-mystery-unfold.mp3"; sourceTree = "<group>"; };
+		928184C72CC50DC700E31C96 /* deep-in-the-dell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "deep-in-the-dell.mp3"; path = "../../../Downloads/HPResources/Audio/deep-in-the-dell.mp3"; sourceTree = "<group>"; };
+		928184C82CC50DC700E31C96 /* magic-wand.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "magic-wand.mp3"; path = "../../../Downloads/HPResources/Audio/magic-wand.mp3"; sourceTree = "<group>"; };
+		928184C92CC50DC700E31C96 /* page-flip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "page-flip.mp3"; path = "../../../Downloads/HPResources/Audio/page-flip.mp3"; sourceTree = "<group>"; };
+		928184CA2CC50DC700E31C96 /* spellcraft.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = spellcraft.mp3; path = ../../../Downloads/HPResources/Audio/spellcraft.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +69,18 @@
 		928184B22CC50CF300E31C96 /* HpTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				928184C12CC50D8400E31C96 /* trivia.json */,
 				928184B32CC50CF300E31C96 /* HpTriviaApp.swift */,
 				928184B52CC50CF300E31C96 /* ContentView.swift */,
 				928184B72CC50CF400E31C96 /* Assets.xcassets */,
+				928184C72CC50DC700E31C96 /* deep-in-the-dell.mp3 */,
+				928184C42CC50DC700E31C96 /* hiding-place-in-the-forest.mp3 */,
+				928184C62CC50DC700E31C96 /* let-the-mystery-unfold.mp3 */,
+				928184C32CC50DC700E31C96 /* magic-in-the-air.mp3 */,
+				928184C82CC50DC700E31C96 /* magic-wand.mp3 */,
+				928184C52CC50DC700E31C96 /* negative-beeps.mp3 */,
+				928184C92CC50DC700E31C96 /* page-flip.mp3 */,
+				928184CA2CC50DC700E31C96 /* spellcraft.mp3 */,
 				928184B92CC50CF400E31C96 /* Preview Content */,
 			);
 			path = HpTrivia;
@@ -125,8 +152,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				928184CF2CC50DC700E31C96 /* deep-in-the-dell.mp3 in Resources */,
+				928184CE2CC50DC700E31C96 /* let-the-mystery-unfold.mp3 in Resources */,
+				928184D02CC50DC700E31C96 /* magic-wand.mp3 in Resources */,
 				928184BB2CC50CF400E31C96 /* Preview Assets.xcassets in Resources */,
+				928184D22CC50DC700E31C96 /* spellcraft.mp3 in Resources */,
 				928184B82CC50CF400E31C96 /* Assets.xcassets in Resources */,
+				928184CB2CC50DC700E31C96 /* magic-in-the-air.mp3 in Resources */,
+				928184CC2CC50DC700E31C96 /* hiding-place-in-the-forest.mp3 in Resources */,
+				928184C22CC50D8400E31C96 /* trivia.json in Resources */,
+				928184D12CC50DC700E31C96 /* page-flip.mp3 in Resources */,
+				928184CD2CC50DC700E31C96 /* negative-beeps.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
