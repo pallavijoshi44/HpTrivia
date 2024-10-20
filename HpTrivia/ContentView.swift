@@ -8,16 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var scalePlayButton = true
-
+    @State private var scalePlayButton = false
+    @State private var moveBackgroundImage = true
+    
     var body: some View {
         GeometryReader { geo in
             ZStack {
                 Image("hogwarts")
                     .resizable()
                     .scaledToFill()
-                    .frame(width: geo.size.width * 3, height: geo.size.height)
+                    .frame(
+                        width:  geo.size.width * 3,
+                        height: geo.size.height
+                        
+                    )
                     .padding(.top, 3)
+                    .offset(x: moveBackgroundImage ? geo.size.width/1.1 : -geo.size.width/1.1)
+                    .onAppear() {
+                        withAnimation(
+                            .linear(duration: 60)
+                            .repeatForever()
+                            ) {
+                                moveBackgroundImage.toggle()
+                            }
+                    }
                 
                 VStack {
                     
@@ -49,7 +63,7 @@ struct ContentView: View {
                     .padding(.horizontal)
                     .background(.black.opacity(0.7))
                     .cornerRadius(15)
-                
+                    
                     Spacer()
                     
                     HStack {
@@ -79,11 +93,10 @@ struct ContentView: View {
                                         withAnimation(
                                             .easeInOut(duration: 1.3)
                                             .repeatForever()) {
-                                                
                                                 scalePlayButton.toggle()
                                             }
                                     }
-                                    
+                                
                             }
                             
                         )
@@ -110,11 +123,9 @@ struct ContentView: View {
                     
                 }
                 
-                
             }
             .frame(width: geo.size.width, height: geo.size.height)
             .padding(.top, 3)
-            
         }
         .ignoresSafeArea()
     }
